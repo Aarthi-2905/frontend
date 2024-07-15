@@ -233,8 +233,8 @@ export default function UserManagement() {
                         <input type="text" name="role" value={currentRowData.role}
                             onChange={handleInputChange} />
                     </div>
-                    <button type="button" onClick={handleSave}>Save</button>
-                    <button type="button" onClick={closeEditModal}>Cancel</button>
+                    <button type="button" className='ok-button' onClick={handleSave}>Save</button>
+                    <button type="button" className='cancel-button' onClick={closeEditModal}>Cancel</button>
                 </form>
             </Modal>
 
@@ -242,8 +242,8 @@ export default function UserManagement() {
                 className="modal-popup" overlayClassName="overlay">
                 <h2>Confirm Delete</h2>
                 <p>Are you sure you want to delete this user?</p><br></br>
-                <button type="button" onClick={handleDelete}>OK</button>
-                <button type="button" onClick={closeConfirmModal}>Cancel</button>
+                <button type="button" className='ok-button'  onClick={handleDelete}>OK</button>
+                <button type="button" className='cancel-button' onClick={closeConfirmModal}>Cancel</button>
             </Modal>
             <ToastContainer />
         </div>

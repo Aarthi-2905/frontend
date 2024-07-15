@@ -48,9 +48,8 @@ export default function LoginForm() {
     //Handles form submission, validates input, calls the login API, and sets authentication data upon success.
     const handleLoginForm = async (event) => {
         event.preventDefault();
-        if (email === 'admin@unwita.com' || password === 'password') {
+        if (email === '' || password === '') {
             errorNotify("Email and Password cannot be empty");
-            navigate('/Home');
             return;
         }
         try {

@@ -378,6 +378,9 @@ html, body {
   color: black;
   /* color: #b1fff3; */
 }
+.input-field::placeholder{
+  color: white;
+}
 
 .modal-overlay {
   background-color: rgba(0, 0, 0, 0.75);

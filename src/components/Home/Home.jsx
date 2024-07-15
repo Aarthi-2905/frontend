@@ -49,12 +49,11 @@ export default function Home() {
     };
     // Calls verifyToken on component mount.
     useEffect(() => {
-        // verifyToken();
+        verifyToken();
     }, []);
 
     if (!isVerified) {
-        // return null;
-        setIsVerified(true);
+        return null;
     }
 
     //Displays a success toast notification.
@@ -190,9 +189,9 @@ export default function Home() {
                 <aside className='sidebar-styled'>
                     <div className='sidebar-top'>
                         <button className='sidebar-item' onClick={handleAboutUs}> About </button>
-                        {/* {userRole === 'admin' && ( */}
+                        {userRole === 'admin' && (
                             <button className='sidebar-item' onClick={handleUserManagement}>User Management</button>
-                        {/* )} */}
+                        )}
                     </div>
                     <div className='sidebar-bottom'>
                         <div className='sidebar-item' onClick={toggleSidebar}>
@@ -255,11 +254,11 @@ export default function Home() {
                                 />
                                 <button type="submit" className="send-button">Send</button>
                             </form>
-                            {/* {userRole === 'admin' && ( */}
+                            {userRole === 'admin' && (
                                 <Paperclip weight="bold" size={25} 
                                     onClick={handleFileClick} className="paperclip-icon"
                                 />
-                            {/* )} */}
+                            )}
                             <input type="file" ref={fileInputRef} style={{ display: 'none' }}
                                 onChange={handleFileChange} accept=".pdf,.xlsx,.txt,.pptx"
                             />

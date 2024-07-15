@@ -148,7 +148,7 @@
     cursor: pointer;
 }
 
-.modal-popup button {
+/* .modal-popup button {
     width: 50%;
     height: 45px;
     background: #388087;
@@ -161,11 +161,43 @@
     font-weight: bolder;
     margin-bottom: 2px;
     transition:2s;
-}
+} */
 
 .modal-popup button:hover{
     background-color: #b1edc2;
     color: black;
+}
+
+.modal-popup .ok-button {
+    width: 49%;
+    height: 45px;
+    background: #388087;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    font-weight: bolder;
+    margin-bottom: 2px;
+    transition:2s;
+    margin-right: 1px;
+}
+
+.modal-popup .cancel-button {
+    width: 49%;
+    height: 45px;
+    background: #388087;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    font-weight: bolder;
+    margin-bottom: 2px;
+    transition:2s;
+    margin-left: 5px;
 }
 
 .overlay {
@@ -186,12 +218,17 @@
     margin: 5px;
     padding: 2px;
 }
+
+.edit-user-button:hover {
+    background-color: #b1edb9;
+    color: black;
+}
 .delete-user-button {
     margin: 5px;
     padding: 2px;
 }
 .delete-user-button:hover{
-    background-color: #b1edc2;
+    background-color: #edb1b1;
     color: black;
 }
 /* change */
