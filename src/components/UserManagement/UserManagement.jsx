@@ -171,6 +171,7 @@ export default function UserManagement() {
 
     return (
         <div className='user-management'>
+        <h1>User Management</h1><br></br>
             <input value={globalFilter || ""}
                 onChange={e => setGlobalFilter(e.target.value || undefined)}
                 placeholder="Search..." className="search-input"

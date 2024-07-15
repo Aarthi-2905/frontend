@@ -65,10 +65,12 @@
     color: white;
     font-weight: bolder;
     margin-top: 20px;
+    transition: 2s;
 }
 
 .wrapper button:hover {
     background-color: #C2EDCE;
+    /* background-color: #aeeec0; */
     color: black;
 }
 
@@ -85,9 +87,10 @@
     font-weight: 600;
 }
 
-/* .register-link p a:hover {
-    text-decoration: underline;
-} */
+.register-link p a:hover {
+    /* text-decoration: underline; */
+    color:rgb(240, 247, 106);
+}
 
 /* Media queries for responsiveness */
 
@@ -109,6 +112,7 @@
     .wrapper button {
         font-size: 18px;
         height: 40px;
+        transition:2s;
     }
 }
 
@@ -130,5 +134,6 @@
     .wrapper button {
         font-size: 16px;
         height: 35px;
+        transition:2s;
     }
 }

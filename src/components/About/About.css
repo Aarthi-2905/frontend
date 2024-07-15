@@ -58,6 +58,7 @@
     font-size: 20px;
     color: black;
     margin-top: 15px;
+    transition:2s;
 }
 .about-back-button:hover{
     background-color: #C2EDCE;

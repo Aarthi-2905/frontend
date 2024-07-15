@@ -57,10 +57,11 @@ html, body {
   margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 5px;
+  transition:2s;
 }
 
 .sidebar-styled button:hover {
-  background-color: #C2EDCE;
+  background-color: #b1edc2;
     color: black;
 }
 
@@ -80,7 +81,7 @@ html, body {
   background: #388087;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   border-radius: 5%;
-  transition: 0.5s;
+  transition: 2s;
 }
 
 .sidebar-top .sidebar-item{
@@ -93,7 +94,7 @@ html, body {
 .sidebar-top .sidebar-item:hover {
   color: black;
   /* background-color: rgb(35, 61, 111); */
-  background: #C2EDCE;
+  background: #b1edc2;
 }
 
 .sidebar-bottom .sidebar-item{
@@ -102,7 +103,7 @@ html, body {
 }
 
 .sidebar-bottom :hover {
-  background-color: #C2EDCE;
+  background-color: #b1edc2;
     color: black;
 }
 
@@ -237,7 +238,7 @@ html, body {
   /* From https://css.glass */
   background: rgba(128, 208, 255, 0.31);
   border-radius: 6px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.559);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.559);
   backdrop-filter: blur(3.2px);
   -webkit-backdrop-filter: blur(3.2px);
   border: 1px solid rgba(0, 131, 167, 0.5);
@@ -253,7 +254,7 @@ html, body {
   /* From https://css.glass */
   background: rgba(41, 245, 218, 0.31);
   border-radius: 6px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.441);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.441);
   backdrop-filter: blur(3.2px);
   -webkit-backdrop-filter: blur(3.2px);
   border: 1px solid rgba(1, 53, 144, 0.5);
@@ -318,9 +319,10 @@ html, body {
   background-color: #BADFE7;;
   font-size: medium;
   font-weight: bolder;
+  transition:2s;
 }
 .send-button:hover{
-  background-color: #C2EDCE;
+  background-color: #b1edc2;
   color: black;
 }
 
@@ -337,12 +339,13 @@ html, body {
 }
 
 .paperclip-icon:hover{
-  color: #C2EDCE;
+  color: #b1edc2;
 }
 
 .signout-button {
   padding: 8px 16px;
   border-radius: 15px;
+  transition:2s;
 }
 
 
@@ -435,7 +438,7 @@ html, body {
 }
 
 .popup-box .sidebar-item:hover {
-  background-color: #C2EDCE;
+  background-color: #b1edc2;
   color: black;
 }
 
@@ -485,7 +488,7 @@ html, body {
     display: flex;
     flex-direction: column;
     scrollbar-width: thin; /* For Firefox */
-    scrollbar-color: #C2EDCE #BADFE7; /* For Firefox */
+    scrollbar-color: #b1edc2 #BADFE7; /* For Firefox */
     box-shadow: 0 4px 25px rgba(0, 0, 0, 0.7);
     border-radius: 1%;
   }
@@ -517,6 +520,7 @@ html, body {
     color: white;
     font-size: 1.5em;
     cursor: pointer;
+    transition:2s;
   }
 
   .mobile-sidebar-item {
@@ -531,10 +535,11 @@ html, body {
     border: none;
     padding: 4%;
     border-radius: 5%;
+    transition:2s;
   }
 
   .mobile-sidebar-item:hover {
-    background-color: #C2EDCE;
+    background-color: #b1edc2;
     color: black;
    
   }

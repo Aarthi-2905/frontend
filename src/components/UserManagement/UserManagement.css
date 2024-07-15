@@ -8,6 +8,7 @@
     margin: 5%;
 }
 
+
 .table {
     width: 100%; 
     margin-bottom: 1rem;
@@ -15,7 +16,8 @@
 }
 
 .user-management h1{
-    color: #6FB3B8;
+    /* color: #6FB3B8; */
+    color:white;
     text-align: center;
 }
 
@@ -51,9 +53,10 @@
     font-size: 20px;
     color: black;
     margin: 2px;
+    transition:2s;
 }
 .back-button:hover {
-    background-color: #C2EDCE;
+    background-color: #b1edc2;
     color: black;
 }
 
@@ -69,9 +72,10 @@
     cursor: pointer;
     background-color: #BADFE7;
     color: black;
+    transition:2s;
 }
 .pagination button:hover{
-    background-color: #C2EDCE;
+    background-color: #b1edc2;
     color: black;
 }
 .search-input {
@@ -156,10 +160,11 @@
     color: white;
     font-weight: bolder;
     margin-bottom: 2px;
+    transition:2s;
 }
 
 .modal-popup button:hover{
-    background-color: #C2EDCE;
+    background-color: #b1edc2;
     color: black;
 }
 
@@ -186,7 +191,7 @@
     padding: 2px;
 }
 .delete-user-button:hover{
-    background-color: #C2EDCE;
+    background-color: #b1edc2;
     color: black;
 }
 /* change */
