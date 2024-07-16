@@ -128,7 +128,7 @@ export default function Home() {
         setIsLoading(true);
 
         try {
-            const data = uploadFile(formData);
+            const data = await uploadFile(formData);
             successNotify("uploaded successfully!!") 
         } catch (error) {
             errorNotify("upload failed!!")
@@ -194,8 +194,8 @@ export default function Home() {
                         )}
                     </div>
                     <div className='sidebar-bottom'>
-                        <div className='sidebar-item' onClick={toggleSidebar}>
-                            <User weight='bold' size={20} className="user-icon"/> Admin{username}
+                        <div className='sidebar-item user-profile' onClick={toggleSidebar}>
+                            <User weight='bold' size={20} className="user-icon"/> {username}
                         </div>
                         {isSidebarOpen && (
                             <div className="popup-box">

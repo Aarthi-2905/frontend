@@ -65,7 +65,7 @@
     color: white;
     font-weight: bolder;
     margin-top: 20px;
-    transition: 2s;
+    transition: 0.4s;
 }
 
 .wrapper button:hover {
@@ -82,7 +82,7 @@
 }
 
 .register-link p a {
-    color: #C2EDCE;
+    color: rgb(244, 247, 184);
     text-decoration: none;
     font-weight: 600;
 }
@@ -112,7 +112,7 @@
     .wrapper button {
         font-size: 18px;
         height: 40px;
-        transition:2s;
+        transition:0.4s;
     }
 }
 
@@ -134,6 +134,6 @@
     .wrapper button {
         font-size: 16px;
         height: 35px;
-        transition:2s;
+        transition:0.4s;
     }
 }

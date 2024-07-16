@@ -10,13 +10,6 @@ import 'react-toastify/dist/ReactToastify.css';
 import Modal from 'react-modal';
 Modal.setAppElement('#root');
 
-const mockUser = [
-    {'username':'aa','email':'a@unwita.com','role':'user'},
-    {'username':'ab','email':'b@unwita.com','role':'admin'},
-    {'username':'ac','email':'c@unwita.com','role':'user'},
-    {'username':'ad','email':'d@unwita.com','role':'admin'},
-]
-
 export default function UserManagement() {
     //Holds the user data.
     const [data, setData] = useState([]);
@@ -95,8 +88,8 @@ export default function UserManagement() {
     useEffect(() => {
         async function loadData() {
             try {
-                // const users = await fetchUsers();
-                setData(mockUser);
+                const users = await fetchUsers();
+                setData(users);
             } catch (error) {
                 console.error("Failed to fetch users:", error);
             } finally {
@@ -225,7 +218,7 @@ export default function UserManagement() {
                         <input type="text" name="username" value={currentRowData.username}
                             onChange={handleInputChange} />
                     </div>
-                    <div className="input-box">
+                    <div className="input-box disabled">
                         <input type="email" name="email" value={currentRowData.email}
                             onChange={handleInputChange} disabled />
                     </div>
