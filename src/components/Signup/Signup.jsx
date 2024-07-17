@@ -74,10 +74,10 @@ const Signup = () => {
                 setStatus(data['detail']);
                 navigate('/Home');
             } else {
-                errorNotify('Invalid token received');
+                errorNotify('The Username and Password is already registered');
             }
         } catch (error) {
-            console.error('Error:', error);
+            errorNotify('Error:', error);
             
         }
     };
@@ -119,7 +119,7 @@ const Signup = () => {
                     <p>Already have an Account? <a href="/">&nbsp;&nbsp; Login</a></p>
                 </div>
             </form>
-            <ToastContainer />
+            <ToastContainer className="toast-container" />
         </div>
     );
 }

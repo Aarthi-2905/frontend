@@ -92,6 +92,14 @@
     color:rgb(240, 247, 106);
 }
 
+.toast-container {
+    position: fixed;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+}
+
 /* Media queries for responsiveness */
 
 @media (max-width: 768px) {

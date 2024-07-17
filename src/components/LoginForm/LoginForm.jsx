@@ -67,7 +67,7 @@ export default function LoginForm() {
             }
 
         } catch (error) {
-            console.log('Invalid Credentials');
+            errorNotify('Invalid Credentials');
         }
     };
 

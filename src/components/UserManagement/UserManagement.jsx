@@ -131,7 +131,7 @@ export default function UserManagement() {
     const handleDelete = async () => {
         try {
             const data = await deleteUser(emailToDelete);
-            successNotify(data.details);
+            successNotify(data.detail);
             setData(prevData => prevData.filter(user => user.email !== emailToDelete));
             closeConfirmModal();
         } catch (error) {
