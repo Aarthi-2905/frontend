@@ -49,7 +49,7 @@ export default function Home() {
     };
     // Calls verifyToken on component mount.
     useEffect(() => {
-        verifyToken();
+        verifyToken(); 
     }, []);
 
     if (!isVerified) {
@@ -211,7 +211,7 @@ export default function Home() {
                 </aside>
                 <div className="main-content">
                     <nav className="navbar-styled">
-                        <p>Varphi GPT</p>
+                        <p>Varphi KBI</p>
                         <button className="mobile-menu-button" onClick={toggleMobileSidebar}>
                             ☰
                         </button>

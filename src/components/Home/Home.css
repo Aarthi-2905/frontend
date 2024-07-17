@@ -225,7 +225,7 @@ html, body {
 }
 
 .response-container::-webkit-scrollbar-thumb {
-  background-color: #6FB3B8;
+  background-color: #469ba3;
   border-radius: 10px;
   /* border: 2px solid #ddfae3; */
 }

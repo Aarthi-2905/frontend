@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import './Signup.css';
 import {FaEye, FaEyeSlash,FaUser } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import { setRole, setToken, setUsername, setUseremail} from "../utils/Auth";
+import { setRole, setToken, setUsername, setUseremail,setStatus} from "../utils/Auth";
 import { useNavigate } from "react-router-dom";
 import {signupUser} from '../Fetch/SignupUser';
 import { ToastContainer, toast } from 'react-toastify';
@@ -71,6 +71,7 @@ const Signup = () => {
                 setUsername(data['user_name']);
                 setUseremail(data['user_email']);
                 setRole(data['role']);
+                setStatus(data['detail']);
                 navigate('/Home');
             } else {
                 errorNotify('Invalid token received');

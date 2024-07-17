@@ -9,7 +9,7 @@ const About = () => {
         <div className="about">
             <div className="about-page">
                 <h1></h1>
-                <h3>Varphi GPT</h3>
+                <h3>Varphi KBI</h3>
                 <p>VARPHI KBI ALPHA</p>
             </div>
             <button onClick={() => navigate('/Home')} className="about-back-button">Back</button>
