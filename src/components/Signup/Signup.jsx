@@ -6,6 +6,7 @@ import { setRole, setToken, setUsername, setUseremail,setStatus} from "../utils/
 import { useNavigate } from "react-router-dom";
 import {signupUser} from '../Fetch/SignupUser';
 import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Signup = () => {
     const navigate = useNavigate();
@@ -82,44 +83,46 @@ const Signup = () => {
         }
     };
     return (
-        <div className="signup-wrapper">
-            <form  onSubmit={handleSubmit} className="signup-form">
-                <h1>Sign Up</h1>
-                <div className="input-boxes">
-                    <input type="text" placeholder="username"  value={username}
-                        onChange={(e) => setUserName(e.target.value)} required 
-                    />
-                    <FaUser className="icon"/>
-                </div>
-                <div className="input-boxes">
-                    <input type="text" placeholder="email" value={email}
-                        onChange={(e) => setEmail(e.target.value)} required 
-                    />
-                    <MdEmail className="icon"/>
-                </div>
-                <div className="input-boxes">
-                    <input type={showPassword ? "text" : "password"} placeholder="password" 
-                        value={password} onChange={(e) => setPassword(e.target.value)}
-                        required 
-                    />
-                    <span onClick={handleTogglePassword} className="toggle-password">
-                        {showPassword ? <FaEyeSlash /> : <FaEye />}
-                    </span>
-                </div>
-                <div className="input-boxes">
-                    <input type={showPassword ? "text" : "password"} placeholder="confirm-password" 
-                     value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)}
-                     required />
-                    <span onClick={handleTogglePassword} className="toggle-password">
-                        {showPassword ? <FaEyeSlash /> : <FaEye />}
-                    </span>
-                </div>
-                <button type="submit">Signup</button>
-                <div className="login-link">
-                    <p>Already have an Account? <a href="/">&nbsp;&nbsp; Login</a></p>
-                </div>
-            </form>
-            <ToastContainer className="toast-container" />
+        <div>
+            <div className="signup-wrapper">
+                <form  onSubmit={handleSubmit} className="signup-form">
+                    <h1>Sign Up</h1>
+                    <div className="input-boxes">
+                        <input type="text" placeholder="username"  value={username}
+                            onChange={(e) => setUserName(e.target.value)} required 
+                        />
+                        <FaUser className="icon"/>
+                    </div>
+                    <div className="input-boxes">
+                        <input type="text" placeholder="email" value={email}
+                            onChange={(e) => setEmail(e.target.value)} required 
+                        />
+                        <MdEmail className="icon"/>
+                    </div>
+                    <div className="input-boxes">
+                        <input type={showPassword ? "text" : "password"} placeholder="password" 
+                            value={password} onChange={(e) => setPassword(e.target.value)}
+                            required 
+                        />
+                        <span onClick={handleTogglePassword} className="toggle-password">
+                            {showPassword ? <FaEyeSlash /> : <FaEye />}
+                        </span>
+                    </div>
+                    <div className="input-boxes">
+                        <input type={showPassword ? "text" : "password"} placeholder="confirm-password" 
+                        value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)}
+                        required />
+                        <span onClick={handleTogglePassword} className="toggle-password">
+                            {showPassword ? <FaEyeSlash /> : <FaEye />}
+                        </span>
+                    </div>
+                    <button type="submit">Signup</button>
+                    <div className="login-link">
+                        <p>Already have an Account? <a href="/">&nbsp;&nbsp; Login</a></p>
+                    </div>
+                </form>
+            </div>
+            <ToastContainer />
         </div>
     );
 }
